@@ -10,7 +10,7 @@ Currently, the only version compatible with homebrew on the Nintendo Switch 2 is
 
 While the bug that allows the exploit to work does exist on older versions, the exploit itself has not been ported to those versions. It's also possible that lower firmware versions may have more powerful vulnerabilities that could be exploited in the future. That being said, if you would rather not wait and want to use homebrew now, it is possible to update to 23.0.1 by locally updating your console with another console running the target firmware version.
 
-If you're on 23.0.1, or okay with missing out on any potential future exploits, we can begin. Before we start, however, we need to make sure that all Nintendo services are properly blocked to prevent your console from being blacklisted.
+If you're on 23.0.1, or okay with missing out on any potential future exploits, we can begin. Before we start, however, we need to make sure that all Nintendo services are properly blocked to protect your console from being blacklisted.
 
 ::: tip
 
