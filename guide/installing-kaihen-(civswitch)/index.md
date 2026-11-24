@@ -10,8 +10,9 @@ This process is experimental and can permanently damage the console. It is espec
 
 ::: danger
 
-Before continuing, read the [brick risk information](https://github.com/s8n/CivSwitchFS-kaiHEN/blob/slop/BRICK_RISKS.md).
+Before continuing, read the [brick risk information](https://github.com/s8n/CivSwitchFS-kaiHEN/blob/slop/BRICK_RISKS.md). If you are not comfortable with this, you should wait for a more mature release.
 
+- Every time you run this exploit, there is a small but very real chance that the console may brick.
 - Never reboot or close Civilization VII while the payload is running.
 - If a log line begins with `STATE IS UNSAFE`, hard-reboot by holding the power button for 15 seconds.
 - If the log reports `STATE IS UNKNOWN`, a crash, or no result, assume the worst and hard-reboot before retrying.
