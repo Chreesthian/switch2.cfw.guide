@@ -1,5 +1,6 @@
 ---
 layout: home
+title: "Switch 2 Guide"
 
 hero:
   name: "Switch 2 Guide"
