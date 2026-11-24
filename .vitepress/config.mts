@@ -1,8 +1,48 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
+
+const siteUrl = 'https://switch2.cfw.guide'
+
+function routeFromRelativePath(relativePath: string) {
+  const route = relativePath
+    .replace(/^es\//, '')
+    .replace(/(^|\/)index\.md$/, '$1')
+    .replace(/\.md$/, '')
+
+  return route ? `/${route}` : '/'
+}
+
+function getAlternateUrls(relativePath: string) {
+  const route = routeFromRelativePath(relativePath)
+
+  return {
+    en: `${siteUrl}${route}`,
+    es: `${siteUrl}/es${route}`
+  }
+}
 
 export default defineConfig({
   title: 'Switch 2 Guide',
   description: 'The complete guide to installing homebrew on your Nintendo Switch 2.',
+  transformHead({ pageData, siteConfig }) {
+    const isSpanishPage = pageData.relativePath.startsWith('es/')
+    const counterpartPath = isSpanishPage
+      ? pageData.relativePath.slice(3)
+      : `es/${pageData.relativePath}`
+    const { en, es } = getAlternateUrls(pageData.relativePath)
+    const head: HeadConfig[] = [
+      ['link', { rel: 'canonical', href: isSpanishPage ? es : en }]
+    ]
+
+    if (siteConfig.pages.includes(counterpartPath)) {
+      head.push(
+        ['link', { rel: 'alternate', hreflang: 'en-US', href: en }],
+        ['link', { rel: 'alternate', hreflang: 'es-ES', href: es }],
+        ['link', { rel: 'alternate', hreflang: 'x-default', href: en }]
+      )
+    }
+
+    return head
+  },
   locales: {
     root: {
       label: 'English',
