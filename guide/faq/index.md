@@ -1,0 +1,41 @@
+---
+title: Frequently Asked Questions
+---
+
+# Frequently Asked Questions
+
+## What is homebrew?
+
+Homebrew is software made by independent developers rather than licensed by Nintendo. It can include utilities, games, and emulators.
+
+## Which system version does this guide support?
+
+The kaiHEN setup covered by this guide requires **23.0.1**. The exploit has not been ported to older versions, and this guide does not support newer versions. See [Get Started](/guide/get-started/) before updating.
+
+## Can I downgrade to 23.0.1?
+
+No. If your console is on a newer system version, you cannot downgrade to use this guide.
+
+## Do I need a game?
+
+Yes. The CivSwitch instructions require a physical **Civilization VII v1.0.0** cartridge. See [Choosing Your Entrypoint](/guide/choosing-your-entrypoint/) for other entry points and their availability.
+
+## Do I need a microSD Express card?
+
+No. A standard microSD card can store homebrew. The CivSwitch kaiHEN setup requires a FAT32 or exFAT card; see [Installing kaiHEN](/guide/installing-kaihen-(civswitch)/) for the requirements.
+
+## Can I connect to Nintendo's servers?
+
+Connecting may blacklist an entry point and prevent you from launching homebrew. Follow [Blocking Nintendo](/guide/blocking-nintendo/) before connecting the console to a network, and verify that Nintendo's servers are blocked.
+
+## Can this brick my console?
+
+Yes. The filesystem exploit is experimental and carries a risk of permanent damage. Read the warnings and linked brick risk information in [Installing kaiHEN](/guide/installing-kaihen-(civswitch)/) before proceeding.
+
+## Do I need to run kaiHEN again after restarting?
+
+Yes. kaiHEN remains active only until the console restarts. With the persistent CivSwitch setup, launch Civilization VII and select **Load Game** to start it again. See [Using kaiHEN](/guide/using-kaihen/).
+
+## How do I open the homebrew menu?
+
+After starting kaiHEN, hold **R** while launching a native Switch 2 game. The first R-held launch records the game's signing policy and starts the game normally; close it and repeat to open hbmenu. See [Using kaiHEN](/guide/using-kaihen/) for details.

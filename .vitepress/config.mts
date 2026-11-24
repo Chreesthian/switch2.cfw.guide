@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'The complete guide to installing homebrew on your Nintendo Switch 2.',
   themeConfig: {
     nav: [
+      { text: 'FAQ', link: '/guide/faq/' },
       { text: 'GitHub', link: 'https://github.com/cfw-guide/switch2.cfw.guide/' }
     ],
     sidebar: {
