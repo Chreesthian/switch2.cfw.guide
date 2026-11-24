@@ -92,7 +92,3 @@ Once the installer succeeds, close Civilization VII normally. Every later start 
 1. Close Civilization VII normally.
 
 Now our homebrew environment should be installed, and you can start using kaiHEN to run homebrew applications on your Switch 2.
-
-::: tip
-Continue to [Using kaiHEN](/guide/using-kaihen/)
-:::

@@ -72,9 +72,3 @@ When connecting to a new network, we will intentionally enter an incorrect passw
 1. Restart your console to refresh the DNS cache.
 
 Now that the DNS settings have been configured, and the console has been restarted, you should be able to connect to the network safely.
-
-::: tip
-
-Continue to [Choosing Your Entrypoint](/guide/choosing-your-entrypoint/)
-
-:::

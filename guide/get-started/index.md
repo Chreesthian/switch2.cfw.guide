@@ -12,12 +12,6 @@ While the bug that allows the exploit to work does exist on older versions, the 
 
 If you're on 23.0.1, or okay with missing out on any potential future exploits, we can begin. Before we start, however, we need to make sure that all Nintendo services are properly blocked to protect your console from being blacklisted.
 
-::: tip
-
-Continue to [Blocking Nintendo](/guide/blocking-nintendo/)
-
-:::
-
 <!--
 
 ### Blacklisting (FunctionBlackList)

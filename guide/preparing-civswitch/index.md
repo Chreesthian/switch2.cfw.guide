@@ -101,9 +101,3 @@ After installation:
 4. The boot trigger will start the payload automatically.
 
 The trigger will run whenever you use **Load Game** after reboot. 
-
-::: tip
-
-Continue to [Installing kaiHEN (CivSwitch)](/guide/installing-kaihen-(civswitch)/)
-
-:::
