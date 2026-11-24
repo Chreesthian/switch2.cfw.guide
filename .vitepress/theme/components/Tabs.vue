@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import { cloneVNode, h, ref, useSlots } from 'vue'
+import { useData } from 'vitepress'
+import { cloneVNode, computed, h, ref, useSlots } from 'vue'
 
 const slots = useSlots()
+const { lang } = useData()
 const activeIndex = ref(0)
+const tabListLabel = computed(() =>
+  lang.value.toLowerCase().startsWith('es') ? 'Opciones' : 'Options'
+)
 
 function getPanels() {
   return (slots.default?.() ?? []).filter(
@@ -13,7 +18,7 @@ function getPanels() {
 
 <template>
   <div class="tabs">
-    <div class="tab-list" role="tablist" aria-label="Options">
+    <div class="tab-list" role="tablist" :aria-label="tabListLabel">
       <button
         v-for="(panel, index) in getPanels()"
         :key="panel.props?.title"
