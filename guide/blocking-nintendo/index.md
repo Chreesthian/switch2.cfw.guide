@@ -18,7 +18,7 @@ Luckily, there are ways to prevent your console from connecting to Nintendo's se
 
 ### What is 90DNS?
 
-90DNS is a custom <Definition term="DNS">A DNS (Domain Name System) is a system that translates human-readable domain names into IP addresses.</Definition> service designed to block Nintendo's servers and prevent your console from being blacklisted. It redirects requests to Nintendo's servers to a non-existent address, effectively preventing any communication with Nintendo's online services.
+90DNS is a custom <Definition term="DNS">A DNS (Domain Name System) is a system that translates human-readable domain names into IP addresses.</Definition> service designed to block Nintendo's servers and protect your console from being blacklisted. It redirects requests to Nintendo's servers to a non-existent address, effectively preventing any communication with Nintendo's online services.
 
 Unfortunately, some ISPs will hijack DNS requests, which can bypass the 90DNS blocking method. This means that even if you have set up 90DNS correctly, your console might still be able to reach Nintendo's servers.
 
